@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "b4898bbf-1ab8-4bea-b8b5-5a9a5f8f3c54",
+		"name": "ms-sb-0001-paraminvoice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19459572"
+	},
+	"item": [
+		{
+			"name": "comer-validfields",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-dev}}/comer-validfields",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"comer-validfields"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "filter.description",
+									"value": "b",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n            \"id\": \"TIPO\",\r\n            \"type\": \"VARCHAR2\",\r\n            \"length\": \"50.00000\",\r\n            \"description\": \"TIPO DE MERCANCIA\"\r\n        }"
+						},
+						"url": {
+							"raw": "{{url-dev}}/comer-validfields",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"comer-validfields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n            \"id\": \"TIPO2\"\r\n        }"
+						},
+						"url": {
+							"raw": "{{url-dev}}/comer-validfields/find-by-ids",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"comer-validfields",
+								"find-by-ids"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n            \"id\": \"TIPO2\"\r\n        }"
+						},
+						"url": {
+							"raw": "{{url-dev}}/comer-validfields",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"comer-validfields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\r\n            \"id\": \"TIPO2\",\r\n            \"type\": \"VARCHAR2\",\r\n            \"length\": \"50.00000\",\r\n            \"description\": \"TIPO DE MERCANCIA\"\r\n        }"
+						},
+						"url": {
+							"raw": "{{url-dev}}/comer-validfields",
+							"host": [
+								"{{url-dev}}"
+							],
+							"path": [
+								"comer-validfields"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
