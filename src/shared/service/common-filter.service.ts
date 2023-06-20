@@ -6,7 +6,9 @@ import {
   PaginateQuery,
 } from 'nestjs-paginate';
 import { PaginateConfig } from 'nestjs-paginate/lib/paginate';
-import { ResponseDataDTO } from 'sigebi-lib-common';
+
+
+import { ResponseDataDTO } from 'src/core/interfaces/response.data.dto';
 import { QueryBuilder, Repository } from 'typeorm';
 
 @Injectable()

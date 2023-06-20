@@ -32,10 +32,10 @@
     "class-validator": "^0.13.2",
     "nest-winston": "^1.8.0",
     "nestjs-paginate": "4.6.1",
+    "pg": "^8.11.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "sigebi-lib-common": "github:INDEP2022/sigebi-lib-common",
     "typeorm": "^0.3.11"
   },
   "devDependencies": {

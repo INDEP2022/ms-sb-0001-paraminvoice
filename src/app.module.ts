@@ -10,7 +10,7 @@ import { ParaminvoiceModule } from './modules/paraminvoice/paraminvoice.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: ['.env'],
+      //envFilePath: ['.env'],
       isGlobal: true,
     }),
     TypeOrmModule.forRoot(configService.getTypeOrmConfig()),

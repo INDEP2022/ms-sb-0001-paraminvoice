@@ -1,7 +1,7 @@
 import { HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { PaginateQuery } from 'nestjs-paginate';
-import { CRUDMessages } from 'sigebi-lib-common';
+import { CRUDMessages } from 'src/core/interfaces/messages.enum';
 import { CommonFilterService } from 'src/shared/service/common-filter.service';
 import { Repository } from 'typeorm';
 import { ComerValidfieldsEntity } from '../infrastructure/entities/comer-validfields.entity';

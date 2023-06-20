@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Message } from 'sigebi-lib-common';
+import { Message } from 'src/shared/utils/message.decorator';
 import { IsOptional, IsString, Length, IsNumber, Max } from 'class-validator';
 import { Type } from 'class-transformer';
 
